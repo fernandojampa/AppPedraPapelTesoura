@@ -59,24 +59,21 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        if((escolhaApp == "tesoura" && escolhaUsuario == "papel") ||
+        if ((escolhaApp == "tesoura" && escolhaUsuario == "papel") ||
                 (escolhaApp == "papel" && escolhaUsuario == "pedra") ||
                 (escolhaApp == "pedra" && escolhaUsuario == "tesoura")
 
 
-        ){//App ganhador
+        ) {//App ganhador
             textResultado.setText("Você perdeu!");
 
 
-
-
-        }else if((escolhaUsuario == "tesoura" && escolhaApp == "papel") ||
+        } else if ((escolhaUsuario == "tesoura" && escolhaApp == "papel") ||
                 (escolhaUsuario == "papel" && escolhaApp == "pedra") ||
-                (escolhaUsuario == "pedra" && escolhaApp == "tesoura"))
-        {//usuário ganhador
+                (escolhaUsuario == "pedra" && escolhaApp == "tesoura")) {//usuário ganhador
             textResultado.setText("Você ganhou!");
 
-        }else{//empate
+        } else {//empate
             textResultado.setText("Empate!");
 
         }
